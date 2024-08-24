@@ -14,7 +14,7 @@ const asideData = [
 ];
 
 const Aside = () => {
-    const [isSidebarOpen , setIsSidebarOpen ] = useState( true )
+    const [isSidebarOpen , setIsSidebarOpen ] = useState( false )
 
   return (
     <motion.div

@@ -21,13 +21,13 @@ const COLORS = ["#6366F1", "#8B5CF6", "#EC4899", "#10B981", "#F59E0B"];
 const CategoryChart = () => {
   return (
     <motion.div
-      className="bg-[#5b4bb757] bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-gray-700"
+      className="bg-[#5b4bb757] bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-[#cdc9f8b6]"
       transition={{ delay: 0.3 }}
     >
-      <h2 className="text-lg font-medium mb-4 text-gray-100">
+      <h2 className=" mb-4 text-lg font-semibold text-gray-400">
         Category Distribution
       </h2>
-      <div className="h-80">
+      <div className="h-[376px]">
         <ResponsiveContainer width={"100%"} height={"100%"}>
           <PieChart>
             <Pie
@@ -38,9 +38,6 @@ const CategoryChart = () => {
               outerRadius={80}
               fill="#8884d8"
               dataKey="value"
-              label={({ name, percent }) =>
-                `${name} ${(percent * 100).toFixed(0)}%`
-              }
             >
               {categoryData.map((entry, index) => (
                 <Cell

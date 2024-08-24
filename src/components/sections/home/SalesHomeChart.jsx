@@ -14,12 +14,12 @@ import {
 const SalesHomeChart = (props) => {
   return (
     <motion.div 
-			className='bg-[#5b4bb757] bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 lg:col-span-2 border border-gray-700'
+			className='bg-[#5b4bb757] bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-[#cdc9f8b6]'
         transition={{delay:0.2}}
     >
-        <h2 className="text-lg font-medium mb-6 text-gray-100">Sales Overview</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full ">
-        <div className="h-80 w-[auto] ">
+        <h2 className="text-lg font-medium mb-6 text-gray-400">Sales Overview</h2>
+        <div className=" flex flex-col">
+        <div className="h-[374px] w-[auto] ">
             <ResponsiveContainer width={"100%"} height={"100%"}>
             <LineChart data={props.value}>
                 <CartesianGrid stroke="#cdc9f8b6" strokeDasharray={"3 3"} />
@@ -44,7 +44,7 @@ const SalesHomeChart = (props) => {
             </ResponsiveContainer>
         </div>
 
-        <div className="h-80 w-[auto]">
+        {/* <div className="h-80 w-[auto]">
             <ResponsiveContainer width={"100%"} height={"100%"}>
             <LineChart data={props.valueStart}>
                 <CartesianGrid stroke="#cdc9f8b6" strokeDasharray={"3 3"} />
@@ -75,7 +75,7 @@ const SalesHomeChart = (props) => {
                 />
             </LineChart>
             </ResponsiveContainer>
-        </div>
+        </div> */}
         </div>
     </motion.div>
   );

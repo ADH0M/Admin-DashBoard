@@ -10,15 +10,15 @@ const SalesChannelChart = (props) => {
     
 	return (
 		<motion.div
-			className='bg-[#5b4bb757] my-4 bg-opacity-50 backdrop-blur-md  shadow-lg rounded-xl p-6 lg:col-span-2 border border-gray-700'
+			className='bg-[#5b4bb757]  my-1 bg-opacity-50 backdrop-blur-md  shadow-lg rounded-xl p-6 border border-[#cdc9f8b6]'
 			initial={{ opacity: 0, y: 20 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ delay: 0.4 }}
 		>
-			<h2 className='text-lg font-medium mb-4 text-gray-100'>Sales by Channel</h2>
+			<h2 className='text-lg font-semibold text-gray-400'>Sales by Channel</h2>
 
-			<div className='h-80'>
-				<ResponsiveContainer>
+			<div className='h-60'>
+				<ResponsiveContainer width={'100%'} height={'100%'}>
 					<BarChart data={props.value}>
 						<CartesianGrid strokeDasharray='3 3' stroke='#4B5563' />
 						<XAxis dataKey='name' stroke='#9CA3AF' />
