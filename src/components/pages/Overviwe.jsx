@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 import { BarChart2, ShoppingBag, Users, Zap } from "lucide-react";
 import Headers from "../common/Headers";
 import Cards from "../common/Cards";
+import SalesHomeChart from "../sections/home/SalesHomeChart";
+import SalesChannelChart from "../sections/home/SalesChannelChart";
+import CategoryChart from "../sections/home/CategoryChart";
 
 const data = [
   { name: "Total Sales", icon: Zap, value: "$12,345", color: "#6366F1" },
@@ -17,11 +20,11 @@ const data = [
 
 const Overviwe = () => {
   return (
-    <div className="relative flex-1 w-full  z-10">
+    <div className="relative  overflow-auto  flex-1 w-full  z-10">
 
       <Headers title="Home" />
 
-      <div className="max-w-7xl mx-auto py-6 px-4 lg:px-8">
+      <div className="max-w-7xl  mx-auto py-6 px-4 lg:px-8">
         <motion.div
           className="mx-auto px-4 lg:px-8  "
           initial={{ opacity: 0, y: 19 }}
@@ -34,7 +37,8 @@ const Overviwe = () => {
             ))}
           </div>
        
-          
+            <SalesHomeChart/>
+
         </motion.div>
       
       </div>

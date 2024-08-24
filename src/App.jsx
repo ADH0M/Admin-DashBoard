@@ -1,11 +1,15 @@
 import { Outlet } from "react-router-dom"
 import Aside from "./components/AsideNav/Aside"
+import { Provider } from "react-redux"
+import store from "./stores/store"
 
 function App() {
 
 
   return (
     <>
+    <Provider store={store}>
+
       <div className="flex h-screen bg-[#3a2e81] text-gray-100 overflow-hidden">
         {/* {backgournd overlay} */}
         <div className='fixed inset-0 z-0'>
@@ -18,6 +22,7 @@ function App() {
         <Outlet/>
 
       </div>
+    </Provider>
 
 
     </>
