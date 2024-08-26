@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Overviwe from './components/pages/Overviwe.jsx'
+import Products from './components/pages/Products.jsx'
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
       }, 
       {
         path:'/Products',
-        element:<div>Products</div>
+        element:<Products/>
       }, 
       {
         path:'/Users',
