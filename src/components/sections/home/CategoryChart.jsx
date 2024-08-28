@@ -24,7 +24,7 @@ const CategoryChart = () => {
       className="bg-[#5b4bb757] bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-[#cdc9f8b6]"
       transition={{ delay: 0.3 }}
     >
-      <h2 className=" mb-4 text-lg font-semibold text-gray-400">
+      <h2 className=" mb-4 text-lg font-semibold dark:text-gray-100 text-gray-900">
         Category Distribution
       </h2>
       <div className="h-[376px]">

@@ -30,7 +30,7 @@ const TotalVisit = () => {
       transition={{ delay: 0.3 }}
     >
       <div className="bg-[#5b4bb757] bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6  border border-[#cdc9f8b6]">
-        <div className="flex gap-3 mb-3 text-sm font-semibold text-gray-400">
+        <div className="flex gap-3 mb-3 text-sm font-semibold dark:text-gray-100 text-gray-900">
           <Camera size={24} color="#f73ee7" />
           <h4>Tootal Viste</h4>
         </div>

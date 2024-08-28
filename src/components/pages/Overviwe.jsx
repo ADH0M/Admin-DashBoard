@@ -39,6 +39,7 @@ const Overviwe = () => {
      {data.map((item, index) => (
       <Cards key={index} items={item} />
     ))}
+    
   </div>
   <div className='md:col-start-2 md:col-end-4 md:row-start-1 md:row-end-3   '> 
     <SalesHomeChart/>  

@@ -31,7 +31,7 @@ const TotalProducts = () => {
       transition={{ delay: 0.3 }}
     >
       <div className="bg-[#5b4bb757] bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-[#cdc9f8b6]">
-        <div className="flex gap-3 mb-3 text-sm font-semibold text-gray-400">
+        <div className="flex gap-3 mb-3 text-sm font-semibold dark:text-gray-100 text-gray-900">
           <StoreIcon size={24} color="#1de4ca" />
           <h4>Tootal Products</h4>
         </div>

@@ -15,9 +15,9 @@ const SalesChannelChart = (props) => {
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ delay: 0.4 }}
 		>
-			<h2 className='text-lg font-semibold text-gray-400'>Sales by Channel</h2>
+			<h2 className='text-lg font-semibolddark:text-gray-100 mb-4 text-gray-900'>Sales by Channel</h2>
 
-			<div className='h-60'>
+			<div className='h-64'>
 				<ResponsiveContainer width={'100%'} height={'100%'}>
 					<BarChart data={props.value}>
 						<CartesianGrid strokeDasharray='3 3' stroke='#4B5563' />
@@ -46,7 +46,7 @@ const SalesChannelChart = (props) => {
 
 function data(state){
 return{
-    value:state.SALES_CHANNEL_DATA
+    value:state.home.SALES_CHANNEL_DATA
 }
 }
 export default connect(data)(SalesChannelChart);
