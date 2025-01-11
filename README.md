@@ -35,3 +35,7 @@ Follow the on-screen instructions to search for Admin-DashBoard , add them to yo
 
 # Contributing 🤝
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request. We appreciate your input as we strive to make the Doctor Booking Appointment even better! 🙌
+
+
+# Project demo 🤝
+https://admin-dash-board-pink.vercel.app/
