@@ -5,6 +5,11 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Overviwe from './components/pages/Overviwe.jsx'
 import Products from './components/pages/Products.jsx'
+import UsersPage from './components/pages/Users.jsx'
+import SalesPage from './components/pages/Sales.jsx'
+import OrdersPage from './components/pages/Orders.jsx'
+import AnalyticsPage from './components/pages/Analytics.jsx'
+import SettingsPage from './components/pages/Settings.jsx'
 
 const router = createBrowserRouter([
   {
@@ -21,23 +26,23 @@ const router = createBrowserRouter([
       }, 
       {
         path:'/Users',
-        element:<div>Users</div>
+        element:<UsersPage/>
       }, 
       {
         path:'/Sales',
-        element:<div>Sales</div>
+        element:<SalesPage/>
       }, 
       {
         path:'/Orders',
-        element:<div>Orders</div>
+        element:<OrdersPage/>
       }, 
       {
         path:'/Analytics',
-        element:<div>Analytics</div>
+        element:<AnalyticsPage/>
       }, 
       {
         path:'/Settings',
-        element:<div>Settings</div>
+        element:<SettingsPage/>
       }, 
     ],
     errorElement:<div>error </div>
